@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teltonika - Mindaugas Bernotas</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="css/table.css" rel="stylesheet" type="text/css"/>
+    <link href="css/overlays.css" rel="stylesheet" type="text/css"/>
+    <link href="css/vw.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div class="bar">
+        <a href="https://teltonika-iot-group.com/">
+            <img src="assets/teltonika_logo.svg"/>
+        </a>
+        <a class="email" href="mailto:mindaugas.bernotas@protonmail.com">
+            mindaugas.bernotas@protonmail.com
+        </a>
+    </div>
+    <div class="sub-bar">
+        <a id="goBack">
+            <img src="assets/back.svg"/>
+            <div id="countryName">-</div>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="filters">
+            <button id="newCity" class="bigger-icon-button" onclick="newCityDialog()">
+                <img src="assets/plus.svg"/>
+            </button>
+            <div>
+                <span>Paieška</span><br>
+                <input id="search" type="text" oninput="searchChanged()">
+            </div>
+            <div>
+                <span>Data</span><br>
+                <input id="date" type="date" onchange="dateChanged()">
+            </div>
+        </div>
+
+        <div style="min-height: 470px;">
+            <table id="citiesTable">
+                <tr id="header">
+                    <th id="sortingHeader" style="border-top-left-radius: 4px;">
+                        <button id="sortButton" onclick="sortChanged()">
+                            Pavadinimas
+                            <span id="sortingIndex"></span>
+                        </button>
+                    </th>
+                    <th>Užimamas plotas</th>
+                    <th>Gyventojų skaičius</th>
+                    <th>Miesto pašto kodas</th>
+                    <th style="border-top-right-radius: 4px;">Veiksmai</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="paginator">
+            <button id="pageBack" class="icon-button" onclick="changePage(-1)">
+                <img src="assets/back.svg"/>
+            </button>
+            <span id="page">#</span>
+            <button id="pageForward" class="icon-button" onclick="changePage(1)">
+                <img src="assets/next.svg"/>
+            </button>
+        </div>
+    </div>
+
+    <div id="notifications-area"></div>
+    <div id="dialog-area">
+        <div id="dialog-window"></div>
+    </div>
+
+    <script type="text/javascript" src="cities.js"></script>
+</body>

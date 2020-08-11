@@ -1,0 +1,98 @@
+/*
+ * This stylesheet is purely for fun.
+ * Type 'vaporwave' in search for a pleasant surprise.
+*/
+
+
+/* body.vw {
+  background-image: linear-gradient(#fee, #fff, #cdf, #fee);
+} */
+
+.bar.vw, #dialog-window.vw > .bar {
+  background-image: linear-gradient(#44e, #a8f);
+}
+
+.sub-bar.vw, #dialog-window.vw > .sub-bar {
+  background-image: linear-gradient(#77e, #fac);
+}
+
+
+
+tbody.vw > tr > th {
+  background-image: linear-gradient(#a5a, #78e);
+}
+
+tbody.vw > tr:nth-child(3n+2) > td {
+  background-image: linear-gradient(#ddf, #fec);
+}
+
+tbody.vw > tr:nth-child(3n) > td {
+  background-image: linear-gradient(#fec, #fdd);
+}
+
+tbody.vw > tr:nth-child(3n+1) > td {
+  background-image: linear-gradient(#fdd, #ddf);
+}
+
+
+.icon-button.vw, tbody.vw > tr > td > .icon-button {
+  background-image: linear-gradient(#abe, #fbe);
+}
+
+.icon-button.vw:hover, tbody.vw > tr > td > .icon-button:hover {
+  background-image: linear-gradient(#9ad, #ead);
+}
+
+.icon-button.vw:active, tbody.vw > tr > td > .icon-button:active {
+  background-image: linear-gradient(#89c, #d9c);
+}
+
+
+.bigger-icon-button.vw {
+  background-image: linear-gradient(#c68, #7af);
+}
+
+.bigger-icon-button.vw:hover {
+  background-image: linear-gradient(#b57, #69e);
+}
+
+.bigger-icon-button.vw:active {
+  background-image: linear-gradient(#a46, #58d);
+}
+
+
+#dialog-window.vw > form > .dialog-buttons > #submit {
+  background-image: linear-gradient(#75f, #c87);
+}
+
+#dialog-window.vw > form > .dialog-buttons > #submit:hover {
+  background-image: linear-gradient(#64e, #b76);
+}
+
+#dialog-window.vw > form > .dialog-buttons > #submit:active {
+  background-image: linear-gradient(#53d, #a65);
+}
+
+
+#dialog-area.delete > #dialog-window.vw > .bar {
+  background-image: linear-gradient(#a37, #e45);
+}
+
+#dialog-area.delete > #dialog-window.vw > form > .dialog-buttons > #submit {
+  background-image: linear-gradient(#c37, #e45);
+}
+
+#dialog-area.delete > #dialog-window.vw > form > .dialog-buttons > #submit:hover {
+  background-image: linear-gradient(#b26, #d34);
+}
+
+#dialog-area.delete > #dialog-window.vw > form > .dialog-buttons > #submit:active {
+  background-image: linear-gradient(#a15, #c23);
+}
+
+
+#notifications-area.vw > .notification {
+  background-color: transparent;
+  background-image: linear-gradient(rgba(92, 35, 138, 0.7),rgba(25, 59, 65, 0.7));
+  color: #fce;
+}

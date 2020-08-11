@@ -1,0 +1,245 @@
+body {
+  font-family: 'Segoe Ui', Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 100%;
+  min-width: 800px;
+}
+
+.email {
+  font-size: 12pt;
+
+  position: relative;
+  top: 10px;
+}
+
+
+.bar {
+  background-color: #33e;
+  color: white;
+
+  font-size: 24pt;
+  font-weight: 600;
+
+  padding: 24px;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+  /* height: 64px; */
+}
+
+.sub-bar {
+  background-color: #66f;
+  color: white;
+
+  font-size: 16pt;
+  font-weight: 500;
+
+  /* width: 100%; */
+  padding: 16px;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filters {
+  margin: 16px;
+  height: 55px;
+}
+
+.filters > * {
+  margin-right: 16px;
+  display: inline-block;
+}
+
+.filters > div > span {
+  font-size: 10pt;
+  font-style: italic;
+  color: #444;
+}
+
+.filters > div > input {
+  height: 20px;
+  position: relative;
+  bottom: 0px;
+  width: 200px;
+}
+
+
+#paginator {
+  text-align: right;
+  padding-right: 16px;
+  height: 32px;
+  margin: 0;
+}
+
+#paginator > span {
+  display: inline-block;
+  text-align: center;
+
+  font-weight: 600;
+  vertical-align: middle;
+
+  width: 32px;
+  height: 32px;
+}
+
+
+#goBack {
+  height: 32px !important;
+  padding: 6px 10px 6px 6px;
+  border-radius: 3px;
+}
+
+#goBack > * {
+  display: inline-block;
+}
+
+#goBack > img {
+  height: 20px;
+  width: 20px;
+  filter: invert(1);
+  position: relative;
+  top: 2px;
+}
+
+
+#goBack:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+#goBack:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: -2px;
+}
+
+
+button {
+  border: none;
+  background-color: #ccf;
+  padding: 8px;
+
+  border-radius: 3px;
+}
+
+button:enabled:hover {
+  background-color: #aaf;
+}
+
+button:enabled:active {
+  background-color: #88f;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: default !important;
+}
+
+/* .img-button {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  height: 32px;
+  vertical-align: middle;
+}
+
+.img-button > img {
+  height: 32px;
+  width: 32px;
+} */
+
+.bigger-icon-button {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 20px !important;
+  cursor: pointer;
+  background-color: #55f;
+}
+
+.bigger-icon-button:hover {
+  background-color: #44e !important;
+}
+
+.bigger-icon-button:active {
+  background-color: #33d !important;
+}
+
+.bigger-icon-button > img {
+  filter: invert(1);
+}
+
+
+.icon-button {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 16px !important;
+  cursor: pointer;
+}
+
+.icon-button > img {
+  width: 16px;
+  height: 16px;
+}
+
+
+.flex-spacer {
+  flex-grow: 1;
+}
+
+
+form {
+  margin-top: 20px;
+}
+
+form > div {
+  margin-top: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  height:64px;
+}
+
+input {
+  border: none;
+  border-bottom: solid 1px grey;
+  width: 362px;
+
+  font-size: 12pt;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+input:hover, input:focus {
+  border-bottom: solid 2px rgb(133, 133, 231);
+}
+
+input:before  {
+  border: none;
+  border-bottom: solid 2px red;
+}
+
+.title {
+  font-style: italic;
+  font-size: smaller;
+}
+
+.validation {
+  font-size: small;
+  font-style: italic;
+  color: red;
+  font-weight: 500;
+}
